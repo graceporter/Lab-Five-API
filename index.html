@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Five API</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+
+<header class="hero-banner">
+    <div class="hero-content">
+        <h1>My Portfolio</h1>
+        <h2>Grace Porter<h2>
+        <p>Interactive Design student at SAIT</p>
+    </div>
+</header>
+    <title>Pokémon Details</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+
+<h2>Select a Pokémon:</h2>
+
+
+<div class="container">
+    <div class="dropdown-container">
+        <h3>Option 1</h3>
+        <select class="pokemon-select" data-card="pokemonCard1">
+            <option value="">Select a Pokémon</option>
+
+        </select>
+        <div class="card" id="pokemonCard1">
+            <h3></h3>
+            <img src="" alt="">
+            <p><strong>Height:</strong> <span></span></p>
+            <p><strong>Weight:</strong> <span></span></p>
+        </div>
+    </div>
+    <div class="dropdown-container">
+        <h3>Option 2</h3>
+        <select class="pokemon-select" data-card="pokemonCard2">
+            <option value="">Select a Pokémon</option>
+
+        </select>
+        <div class="card" id="pokemonCard2">
+            <h3></h3>
+            <img src="" alt="">
+            <p><strong>Height:</strong> <span></span></p>
+            <p><strong>Weight:</strong> <span></span></p>
+        </div>
+    </div>
+    <div class="dropdown-container">
+        <h3>Option 3</h3>
+        <select class="pokemon-select" data-card="pokemonCard3">
+            <option value="">Select a Pokémon</option>
+       
+        </select>
+        <div class="card" id="pokemonCard3">
+            <h3></h3>
+            <img src="" alt="">
+            <p><strong>Height:</strong> <span></span></p>
+            <p><strong>Weight:</strong> <span></span></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<main>
+    <section class="content-section">
+        <!-- Content Section -->
+        <h2>Intro</h2>
+        <p>I am a first year student in the Interactive Design Diploma, specializing in User Experience. 
+            My design style is abstract, focusing on organic and surreal shapes. Please enjoy my portfolio!
+        </p>
+    </section>
+
+    <section class="card-section">
+        <!-- Card Section -->
+        <div class="card">
+            <img src="Assets/Photo 1-Pigs on the Beach.jpg" alt="surrealist collage featuring glowing pigs on a beach with a fireball headed for them.">
+            <h3>Pigs on the Beach</h3>
+            <p>A photo composite made for an assignment.</p>
+        </div>
+        
+        <div class="card">
+            <img src="Assets/Album Cover.png" alt="Album cover with wavy lines and a circle called Waves.">
+            <h3>Album Cover</h3>
+            <p>An album cover made to be similar to a popular band.</p>
+        </div>
+
+        <div class="card">
+            <img src="Assets/Ski Resort.png" alt="Retro Ridge Ski Resort Logo with pink font and a yellow line weaving through the text.">
+            <h3>Ski Resort Logo</h3>
+            <p>A logo created for a made-up ski resort form the 80's.</p>
+        </div>
+    </section>
+
+<h2>About Me</h2>
+<button class="accordion">Hobbies</button>
+    <div class="panel">
+    <p>In my spare time I enjoy: knitting, lifting, running, hiking, cooking, drawing, playing soccer and volleyball.</p>
+        </div>
+ 
+<button class="accordion">Favourite Foods</button>
+    <div class="panel">
+        <p><span class="bold-text">I enjoy many different kinds of foods, but these are my current favourites:</span></p>
+    <ul>
+        <li>Birria Tacos from Tu Taco</li>
+        <li>Chili Goma Ramen from Shiki Menya</li>
+        <li>Vegetarian Plate from Jerusalem Shawarma</li>
+        <li>Bhindi Masala from Blue Flame in Medicine Hat</li>
+        <li>Tandoori Chicken Kabob Bowl from Taj Kabob</li>
+    </ul>
+        </div>
+ 
+    <button class="accordion">Music</button>
+        <div class="panel">
+            <p><span class="bold-text">These are my top 5 favourite songs in the month of March:</span></p>
+        <ul>
+            <li>A Different Age - Current Joys</li>
+            <li>Weird Science (Don't Leave My Arms) - Current Joys</li>
+            <li>Paris - $uicideBoy$</li>
+            <li>Bathed in Grey - Them & I</li>
+            <li>Rocks - Bones</li>
+        </ul>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+<h2 class="fav-video">My Favourite Youtube Video:</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DIrQ9ilL8aw?si=Kk8uVvEBi2BMnwRX" frameborder="0" allowfullscreen></iframe>
+    </div>
+</main>
+
+<footer class="footer">
+    <i class="fa fa-envelope"></i>
+    <span>Contact Me: fakeemail@gmail.com</span>
+    <p>&copy; 2024 Grace Porter. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
